@@ -1,0 +1,29 @@
+{
+    "name": "kozhindev/xml-helper",
+    "description": "Array-to-XML-to-array library",
+    "type": "library",
+    "authors": [
+        {
+            "name": "aleksandr bogatikov",
+            "email": "perlexed@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-dom": "*",
+        "ext-simplexml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\": "kozhindev"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit --bootstrap tests/bootstrap.php tests/XmlHelperTest"
+        ]
+    }
+}
